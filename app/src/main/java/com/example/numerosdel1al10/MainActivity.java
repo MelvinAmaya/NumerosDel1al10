@@ -7,11 +7,13 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     public Button numeros;
     int contador;
+    public ImageView btAtr;
 
     @Override
     public void onBackPressed() {
@@ -46,6 +48,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         numeros = (Button) findViewById(R.id.btnnum);
+        btAtr = (ImageView) findViewById(R.id.btnatras);
+
+
+        btAtr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),MainActivity_About.class);
+                startActivity(i);
+            }
+        });
+
         numeros.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

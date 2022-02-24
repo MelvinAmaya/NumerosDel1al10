@@ -8,6 +8,18 @@
     android:background="@drawable/fon">
 
     <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="355dp"
+        android:layout_height="59dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="About"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.889" />
+
+    <Button
         android:id="@+id/btnnum"
         android:layout_width="355dp"
         android:layout_height="59dp"
