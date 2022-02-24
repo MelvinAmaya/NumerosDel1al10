@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     public Button numeros;
     int contador;
-    public ImageView btAtr;
+    public Button btAtr;
 
     @Override
     public void onBackPressed() {
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         numeros = (Button) findViewById(R.id.btnnum);
-        btAtr = (ImageView) findViewById(R.id.btnatras);
+        btAtr = (Button) findViewById(R.id.btnAbout);
 
 
         btAtr.setOnClickListener(new View.OnClickListener() {
